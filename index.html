@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head><title>Game Club Form 102</title></head>
+<body>
+
+    <center><h1>Game Club Form</h1></center>
+    <center><p>Kindly fill the form if you like<br>
+    joining our game club and answer questions</p></center>
+
+    <form>
+        <fieldset>
+      <legend>Your information</legend>
+        <label for="Name">Full Name:</label>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your full name" autocomplete="name">
+        <br><br>
+
+        <label for="Contact Number">Contact Number:</label>
+        <input type="tel" id="contact" name="phone" placeholder="+63"><br><br>
+
+        <label for="Birthday">Birth Day:</label>
+        <input type="date" id="birthday" ><br><br>
+
+       <label for="gender">Gender:</label>
+    <select name="sex" id="gender-select">
+     <option value="male">Male</option>
+     <option value="female">Female</option>
+    </select><br><br>
+
+     <label for="email">Gmail Address:</label>
+
+    <input type="email" id="email" name="email"
+           autocomplete="email"
+           placeholder="example@gmail.com"
+           pattern="^[a-zA-Z0-9._%+-]+@gmail\.com$"
+           required><br><br>
+
+     <label for="emp">Employed:</label>
+   <select id="emp" name="emp" disabled>
+     <option>No</option>
+     <option>Yes</option>
+    </select>
+        </fieldset>
+  </form>
+
+ <h2>Questions</h2><br>
+
+ <p><strong>Why you want to join our club?</strong></p>
+<label for="message">Message:</label><br><br>
+<textarea name="message" id="message" rows="5" cols="40"
+ maxlength="200" max="100"> </textarea><br><br>
+
+ <P><strong>What is your favorite game and why?</strong></p>
+<label for="message">Message:</label><br><br>
+<textarea name="message" id="message" rows="5" cols="40"
+ maxlength="200" max="200"> </textarea><br><br>
+
+ <p>Thank you!</p>
+ <button type="submit">Submit</button>
+</body>
+</html>
